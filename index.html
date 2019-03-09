@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Space Odity</title>
+
+</head>
+
+<body>
+    <div>
+        <!-- sun -->
+        <div class="container container__sun" data-planet="sun">
+            <img class="skeleton" src="skeleton.svg" alt="">
+
+            <svg class="sun" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)" data-planet="sun">
+                    <radialGradient id="sunGradient" cx="50%" cy="70%" r="80%" fx="50%" fy="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(253, 173, 0)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(207, 27, 27)" />
+                    </radialGradient>
+
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathSun" style="opacity:1;fill:url(#sunGradient);stroke-opacity:1;paint-order:normal" />
+                    <text class="sunText planetText" width="60" transform="translate(1,-1.5) ">
+                        <textPath xlink:href="#pathSun">
+                            SUN
+                        </textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <!-- mercury -->
+        <div class="container container__mercury" data-planet="mercury">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="mercury" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="mercuryGrad" x1="0%" y1="50%" x2="100%" y2="100%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(128, 128, 128)" />
+                        <stop class="offset2" offset="80%" style="stop-color:rgb(224, 224, 224)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathMercury" style="opacity:1;fill:url(#mercuryGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="mercuryText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathMercury">
+                            MERCURY
+                        </textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <!-- venus -->
+        <div class="container container__venus" data-planet="venus">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="venus" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="venusGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(253, 29, 152)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(245, 102, 35)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathVenus" style="opacity:1;fill:url(#venusGrad);;stroke-width:0.26342171;stroke-opacity:1;paint-order:normal" />
+                    <text class="venusText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathVenus">
+                            VENUS
+                        </textPath>
+                    </text>
+                </g>
+            </svg> </div>
+        <!-- moon -->
+        <div class="container container__moon" data-planet="moon">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="moon" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(71, 71, 71)" />
+                        <stop offset="50%" style="stop-color:rgb(172, 172, 172)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(0, 0, 0)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathMoon" style="opacity:1;fill:url(#moonGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="moonText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathMoon">
+                            MOON
+                        </textPath>
+                    </text>
+                </g>
+            </svg> </div>
+        <!-- earth -->
+        <div class="container container__earth" data-planet="earth">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="earth" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="earthGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(6, 24, 187)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(11, 199, 26)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathEarth" style="opacity:1;fill:url(#earthGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="earthText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathEarth">
+                            EARTH
+                        </textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <!-- mars -->
+        <div class="container container__mars" data-planet="mars">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="mars" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="marsGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(187, 6, 6)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(255, 45, 45)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathMars" style="opacity:1;fill:url(#marsGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="marsText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathMars">
+                            MARS
+                        </textPath>
+                    </text>
+                </g>
+            </svg> </div>
+        <!-- jupiter -->
+        <div class="container container__jupiter" data-planet="jupiter">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="jupiter" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="jupiterGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(153, 82, 0)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(185, 127, 40)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathJupiter" style="opacity:1;fill:url(#jupiterGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="jupiterText planetText" width="60" transform="translate(1,-1.5) ">
+                        <textPath xlink:href="#pathJupiter">
+                            JUPITER
+                        </textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <!-- saturn -->
+        <div class="container container__saturn" data-planet="saturn">
+            <img class="skeleton" src="skeleton.svg" alt="" srcset="">
+
+            <svg class="saturn" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="saturnGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(255, 233, 39)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(255, 187, 0)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathSaturn" style="opacity:1;fill:url(#saturnGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="saturnText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathSaturn">
+                            Saturn
+                        </textPath>
+                    </text>
+                </g>
+
+                <g transform="translate(-66.226188,15)" id="rings">
+                    <linearGradient id="ring1" x1="50%" y1="100%" x2="40%" y2="0">
+                        <stop offset="0%" style="stop-color:rgb(218, 60, 21); stop-opacity:1" />
+                        <stop offset="90%" style="stop-color:white; stop-opacity:0" />
+                    </linearGradient>
+                    <linearGradient id="ring2" x1="50%" y1="100%" x2="40%" y2="0">
+                        <stop offset="0%" style="stop-color:rgb(218, 182, 21); stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:white; stop-opacity:0" />
+                    </linearGradient>
+                    <linearGradient id="ring3" x1="50%" y1="100%" x2="40%" y2="0">
+                        <stop offset="0%" style="stop-color:rgb(218, 21, 21); stop-opacity:1" />
+                        <stop offset="75%" style="stop-color:white; stop-opacity:0" />
+                    </linearGradient>
+                    <ellipse style="transform: rotateX(-50deg) rotate(20deg);display:inline;fill:none;fill-opacity:0;stroke: url(#ring1);stroke-width:7.31375408;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+                        id="path827-3-4-8-5-6-8-1" ry="20" rx="40" cy="-10" cx="100" />
+                    <ellipse style="transform: rotateX(-50deg) rotate(20deg);display:inline;fill:none;fill-opacity:0;stroke: url(#ring2);stroke-width:3.31375408;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+                        id="path827-3-4-8-5-6-8-2" ry="20" rx="45" cy="-10" cx="100" />
+                    <ellipse style="transform: rotateX(-50deg) rotate(20deg);display:inline;fill:none;fill-opacity:0;stroke: url(#ring3);stroke-width:1.31375408;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+                        id="path827-3-4-8-5-6-8-3" ry="20" rx="45" cy="-10" cx="100" />
+                </g>
+            </svg>
+        </div>
+        <!-- uranus -->
+        <div class="container container__uranus" data-planet="uranus">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="uranus" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="uranusGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(20, 141, 211)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(91, 250, 255)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathUranus" style="opacity:1;fill:url(#uranusGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="uranusText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathUranus">
+                            URANUS
+                        </textPath>
+                    </text>
+                </g>
+
+
+            </svg> </div>
+        <!-- neptune -->
+        <div class="container container__neptune" data-planet="neptune">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="neptune" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="neptuneGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(137, 255, 113)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(17, 182, 80)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathNeptune" style="opacity:1;fill:url(#neptuneGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="neptuneText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathNeptune">
+                            Neptune
+                        </textPath>
+                    </text>
+                </g>
+            </svg> </div>
+        <!-- pluto -->
+        <div class="container container__pluto" data-planet="pluto">
+            <img class="skeleton" src="skeleton.svg" alt="">
+            <svg class="pluto" viewBox="0 0 60 60">
+                <g transform="translate(-62.226188,18.750001)">
+                    <linearGradient id="plutoGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+                        <stop class="offset1" offset="0%" style="stop-color:rgb(177, 100, 0)" />
+                        <stop class="offset2" offset="100%" style="stop-color:rgb(90, 51, 0)" />
+                    </linearGradient>
+                    <path d="M62.357899,11.25a29.86829,29.86829 0 1,0 59.73658,0a29.86829,29.86829 0 1,0 -59.73658,0"
+                        id="pathPluto" style="opacity:1;fill:url(#plutoGrad);stroke-opacity:1;paint-order:normal" />
+                    <text class="plutoText planetText" width="60" transform="translate(1,-1.5)">
+                        <textPath xlink:href="#pathPluto">
+                            PLUTO
+                        </textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <!-- ship -->
+        <div class=" container__ship" style="top:90%;left:90%">
+            <svg class=" ship" viewBox="0 0 82 42">
+                <defs>
+                    <linearGradient id="a">
+                        <stop offset="0" stop-color="#4aacd3" />
+                        <stop offset="1" stop-color="#4aacd3" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="f" x1="-155.235" x2="-117.664" y1="213.845" y2="213.845" gradientUnits="userSpaceOnUse"
+                        xlink:href="#a" />
+                    <filter id="d" width="1.037" height="1.069" x="-.018" y="-.034" color-interpolation-filters="sRGB">
+                        <feGaussianBlur stdDeviation=".601" />
+                    </filter>
+                    <filter id="c" width="1.038" height="1.066" x="-.019" y="-.033" color-interpolation-filters="sRGB">
+                        <feGaussianBlur stdDeviation=".805" />
+                    </filter>
+                    <filter id="b" width="1.038" height="1.066" x="-.019" y="-.033" color-interpolation-filters="sRGB">
+                        <feGaussianBlur stdDeviation="1.031" />
+                    </filter>
+                    <filter id="e" width="1.037" height="1.069" x="-.018" y="-.034" color-interpolation-filters="sRGB">
+                        <feGaussianBlur stdDeviation=".601" />
+                    </filter>
+                </defs>
+                <g transform="matrix(.25 0 0 .25 53.923 -20.898)">
+                    <path fill="#ff9f0b" d="M108.938 108.617l2.047-1.178c-3.063.68-159.059-16.738-126.31 55.55 25.576 56.455 127.462-33.26 124.263-54.372z"
+                        filter="url(#b)" />
+                    <path fill="#ff500b" d="M82.813 118.308l1.599-.92c-2.394.531-124.265-13.077-98.68 43.398 19.981 44.105 99.58-25.984 97.08-42.478z"
+                        filter="url(#c)" />
+                    <path fill="#ff140b" d="M64.327 126.94l1.224-.657c-1.831.38-95.08-9.329-75.504 30.96 15.289 31.463 76.192-18.537 74.28-30.303z"
+                        filter="url(#d)" />
+                    <path fill="#ffffe5" d="M-34.82 167.86l1.224-.657c-1.83.38-95.08-9.328-75.503 30.96 15.288 31.463 76.192-18.537 74.28-30.303z"
+                        filter="url(#e)" transform="matrix(-.88904 -.41468 .53857 -1.15465 -205.927 347.484)" />
+                    <path fill="#fff" stroke="#b0860b" stroke-linecap="round" stroke-width="1.629" d="M-184.074 235.914c24.758 55.482 176.137-46.87 176.137-46.87l-20.866-54.72s-180.476 45.107-155.271 101.59z"
+                        paint-order="fill markers stroke" />
+                    <ellipse cx="-136.449" cy="213.845" fill="url(#f)" stroke="#b0860b" stroke-linecap="round"
+                        stroke-width="1.47" paint-order="fill markers stroke" rx="18.551" ry="16.661" />
+                    <path fill="#b0860b" stroke="#000" stroke-width=".265" d="M-215.635 250.13c21.613-10.129 23.878-9.322 41.293-3.023-5.26-8.023-12.234-17.583-12.095-24.38-6.92 16.515-7.598 17.32-29.198 27.404zM-61.988 143.164s6.048-40.444 22.678-34.018c16.631 6.425-.377-25.325-.377-25.325s-65.046 74.546-48.381 69.17c11.717-3.78 26.08-9.827 26.08-9.827zM-31.46 204.74s34.298 22.269 40.506 5.555c6.207-16.713 18.716 17.064 18.716 17.064s-98.931-.68-83.863-9.598c10.595-6.271 24.641-13.021 24.641-13.021z" />
+                    <path fill="#b0860b" stroke="#000" stroke-width=".298" d="M-71.088 179.672l69.418-32.304 3.88 7.552-71.143 29.786z" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
